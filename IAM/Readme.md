@@ -15,7 +15,7 @@ This repository contains notes on AWS Identity and Access Management (IAM). The 
 - [Roles](Roles.md)
 
   *IAM roles are used to delegate access with temporary credentials to AWS resources.*
-- [Policies](Policie.md)
+- [Policies](Policies.md)
 
   *IAM policies are JSON documents that specify permissions. They determine what actions are allowed or denied for specific resources.*
 - [Best Practices](Best-Practices.md)
