@@ -44,4 +44,4 @@
     6. Search for and select the policy (e.g., **AmazonS3ReadOnlyAccess**).
     7. Click **Next: Review**, then **Add permissions**.
 
-**Next:** [AWS IAM Groups](03-groups.md)
+**Next:** [AWS IAM Groups](02-Groups.md)

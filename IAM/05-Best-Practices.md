@@ -23,4 +23,4 @@ The best practices ensures that the IAM setup is secure, manageable, and scalabl
     5. In the **Multi-Factor Authentication (MFA)** section, click **Manage**.
     6. Follow the instructions to configure MFA.
 
-**Next:** [AWS IAM Troubleshooting](07-troubleshooting.md)
+**Next:** [AWS IAM Troubleshooting](06-TroubleShooting.md)

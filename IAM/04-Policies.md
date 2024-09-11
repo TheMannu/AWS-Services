@@ -51,4 +51,4 @@
     4. Search for and select the policy (e.g., **AmazonS3ReadOnlyAccess**).
     5. Click **Next: Review**, then **Add permissions**.
 
-**Next:** [AWS IAM Best Practices](06-best-practices.md)
+**Next:** [AWS IAM Best Practices](05-Best-Practices.md)

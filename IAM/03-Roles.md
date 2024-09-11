@@ -44,4 +44,4 @@ AWS Identity and Access Management (IAM) roles are entities you create and assig
     6. Search for and select the policy (e.g., **AWSLambdaBasicExecutionRole**).
     7. Click **Next: Review**, then **Add permissions**.
 
-**Next:** [AWS IAM Policies](05-policies.md)
+**Next:** [AWS IAM Policies](04-Policies.md)
