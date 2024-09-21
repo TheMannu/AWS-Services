@@ -24,3 +24,13 @@
 
 ### **7. Fault Tolerance**
    - **Fault tolerance** is closely related to high availability. It ensures that the system continues to function even in the event of a component failure. High availability uses techniques like redundancy and failover to achieve fault tolerance.
+
+### **8. Configuring High Availability**
+   - High availability can be configured based on your needs and application requirements. Services like **Elastic Load Balancing (ELB)**, **Auto Scaling**, and **Amazon RDS Multi-AZ** can be used to ensure that your applications are available even during outages or peak traffic.
+
+### **Summary**
+   - **High Availability** ensures that your application remains operational with minimal downtime by running it across multiple Availability Zones.
+   - It works in conjunction with **horizontal scaling** and is supported by **load balancing** and **fault-tolerant** configurations.
+   - Whether through passive setups like **RDS Multi-AZ** or active scaling with **load balancers**, high availability helps your application survive failures and maintain performance.
+
+In essence, **high availability** combined with **load balancing** ensures that your application remains resilient and responsive even during failures or unexpected traffic spikes.
