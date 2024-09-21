@@ -12,3 +12,15 @@
 
 ### **4. Surviving Data Center Loss**
    - The goal of high availability is to **survive the failure of an entire data center** or an Availability Zone. This ensures that your application remains operational even if there is a major outage in one of the zones.
+
+### **5. Passive vs Active High Availability**
+   - High availability can be implemented in both **passive** and **active** configurations:
+     - **Passive**: Services like **RDS Multi-AZ** provide passive high availability. In this setup, a primary database runs in one AZ, and a standby database in another AZ automatically takes over if the primary fails.
+     - **Active**: In **horizontal scaling**, all instances are active and can distribute the load across multiple servers, ensuring that the application can handle high traffic while remaining available.
+
+### **6. Load Balancing for High Availability**
+   - **Load Balancing** is essential for high availability. It distributes traffic across multiple instances or servers, ensuring that no single instance is overwhelmed, and improving fault tolerance.
+   - A **load balancer** routes requests to healthy instances across different AZs, automatically switching to backup instances if any fail. This ensures consistent availability.
+
+### **7. Fault Tolerance**
+   - **Fault tolerance** is closely related to high availability. It ensures that the system continues to function even in the event of a component failure. High availability uses techniques like redundancy and failover to achieve fault tolerance.
