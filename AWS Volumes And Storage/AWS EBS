@@ -5,4 +5,11 @@ Amazon Elastic Block Store (EBS) is a scalable and high-performance block storag
    - **Provisioned IOPS SSD (io2 and io1)**: Used for I/O-intensive applications like databases. Provides high performance and consistent IOPS (input/output operations per second).
    - **Throughput Optimized HDD (st1)**: Designed for large, sequential workloads like big data, log processing, and data warehouses.
    - **Cold HDD (sc1)**: The lowest-cost option, used for infrequently accessed data.
+   
+### 2. **Key Features**
+   - **Durability**: EBS automatically replicates data within its availability zone to ensure durability and high availability.
+   - **Snapshots**: EBS allows you to create point-in-time snapshots of volumes, which are stored in Amazon S3. These snapshots can be used to back up data or create new volumes.
+   - **Encryption**: You can enable encryption for EBS volumes to secure data at rest using AWS Key Management Service (KMS).
+   - **Resize Volumes**: You can increase the size of an EBS volume, adjust the performance settings, or switch between volume types without stopping the instance.
+   - **IOPS and Throughput**: Provisioning IOPS for specific use cases allows you to fine-tune performance for high-transaction applications.
 
