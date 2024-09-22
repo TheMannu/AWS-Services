@@ -17,3 +17,21 @@ Amazon Elastic Block Store (EBS) is a scalable and high-performance block storag
    - **Relational Databases**: You can use high-performance EBS volumes like io2 for workloads such as MySQL, Oracle, and SQL Server.
    - **NoSQL Databases**: EBS provides consistent and low-latency storage for databases like MongoDB and Cassandra.
    - **Big Data Analytics**: Data-intensive applications, such as Hadoop, can use Throughput Optimized HDD volumes (st1) for high-throughput access to large datasets.
+
+### 4. **Common Commands for EBS in AWS CLI**
+   - **Create a volume**:
+     ```bash
+     aws ec2 create-volume --size 100 --region us-east-1 --availability-zone us-east-1a --volume-type gp3
+     ```
+   - **Attach a volume to an EC2 instance**:
+     ```bash
+     aws ec2 attach-volume --volume-id vol-0123456789abcdef --instance-id i-0123456789abcdef0 --device /dev/sdf
+     ```
+   - **Take a snapshot**:
+     ```bash
+     aws ec2 create-snapshot --volume-id vol-0123456789abcdef --description "Snapshot for backup"
+     ```
+   - **Delete a volume**:
+     ```bash
+     aws ec2 delete-volume --volume-id vol-0123456789abcdef
+     ```
