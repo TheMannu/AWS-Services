@@ -18,3 +18,7 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
 ### 4. **Storage Classes**
    - **Standard**: For frequently accessed files with low latency and high throughput requirements.
    - **Infrequent Access (IA)**: For files that are less frequently accessed and stored at a lower cost. EFS automatically moves files to IA based on access patterns to reduce storage costs.
+
+### 5. **Security**
+   - **Encryption at Rest and in Transit**: Data is encrypted using AWS Key Management Service (KMS), and EFS supports TLS to encrypt data in transit between the file system and clients.
+   - **Access Control**: EFS integrates with AWS Identity and Access Management (IAM) to control access to the file system. You can also use NFS-level permissions.
