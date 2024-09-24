@@ -57,3 +57,13 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
    ```bash
    aws efs delete-file-system --file-system-id fs-01234567
    ```
+
+### 8. **Pricing**
+   - **Storage**: Charged based on the amount of data stored in the file system.
+   - **Throughput**: Additional charges may apply for provisioned throughput.
+   - **Data Transfer**: Data transfer within the same region is free, but transferring data across regions incurs costs.
+
+### 9. **Comparison with AWS EBS**
+   - **EBS** is block storage for single EC2 instances, while **EFS** provides a shared file system for multiple EC2 instances.
+   - EFS scales automatically based on usage, whereas EBS requires manual resizing.
+   - EBS is often used for databases, while EFS is used for shared files, content management, and workloads needing multiple instances to access the same data.
