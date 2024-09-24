@@ -6,3 +6,7 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
    - **Shared Access**: Multiple EC2 instances across different Availability Zones can simultaneously mount an EFS file system, allowing for distributed file storage.
    - **Elastic**: EFS automatically scales up or down as you add or remove files, without needing to provision storage in advance.
    - **POSIX-compliant**: EFS is designed for workloads that require file system interfaces, file access semantics (locking), and permissions models.
+   
+### 2. **Performance Modes**
+   - **General Purpose**: Best suited for latency-sensitive use cases like web serving, content management, and development environments.
+   - **Max I/O**: Designed for use cases that require high throughput and can tolerate higher latencies, such as big data analytics or media processing.
