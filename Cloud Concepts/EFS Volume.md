@@ -28,3 +28,32 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
    - **Big Data and Analytics**: EFS can handle large-scale data workloads that require high throughput and scalability.
    - **Container Storage**: EFS integrates with Amazon ECS and Kubernetes, providing persistent storage for containers.
    - **Web Serving**: EFS enables multiple web servers to share access to the same files, making it ideal for distributed web serving.
+
+### 7. **How to Use AWS EFS**
+
+#### a. **Creating an EFS File System** (using AWS CLI):
+   ```bash
+   aws efs create-file-system --performance-mode generalPurpose --region us-east-1
+   ```
+
+#### b. **Mounting an EFS File System on EC2**:
+   1. Install the NFS client:
+      ```bash
+      sudo yum install -y nfs-utils   # for Amazon Linux
+      sudo apt-get install nfs-common # for Ubuntu
+      ```
+   2. Mount the EFS file system:
+      ```bash
+      sudo mount -t nfs -o nfsvers=4.1 fs-01234567.efs.us-east-1.amazonaws.com:/ /mnt/efs
+      ```
+
+#### c. **Setting Up Auto-mount (for persistent mounting across reboots)**:
+   Add the following line to your `/etc/fstab` file:
+   ```bash
+   fs-01234567.efs.us-east-1.amazonaws.com:/ /mnt/efs nfs4 defaults,_netdev 0 0
+   ```
+
+#### d. **Deleting an EFS File System**:
+   ```bash
+   aws efs delete-file-system --file-system-id fs-01234567
+   ```
