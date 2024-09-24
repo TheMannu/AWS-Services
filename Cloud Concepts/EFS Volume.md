@@ -22,3 +22,9 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
 ### 5. **Security**
    - **Encryption at Rest and in Transit**: Data is encrypted using AWS Key Management Service (KMS), and EFS supports TLS to encrypt data in transit between the file system and clients.
    - **Access Control**: EFS integrates with AWS Identity and Access Management (IAM) to control access to the file system. You can also use NFS-level permissions.
+
+### 6. **Use Cases**
+   - **Content Management**: EFS supports content-rich applications such as media workflows, web content, and publishing.
+   - **Big Data and Analytics**: EFS can handle large-scale data workloads that require high throughput and scalability.
+   - **Container Storage**: EFS integrates with Amazon ECS and Kubernetes, providing persistent storage for containers.
+   - **Web Serving**: EFS enables multiple web servers to share access to the same files, making it ideal for distributed web serving.
