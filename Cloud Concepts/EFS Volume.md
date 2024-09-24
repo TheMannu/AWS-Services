@@ -14,3 +14,7 @@ Amazon Elastic File System (EFS) is a scalable and fully managed file storage se
 ### 3. **Throughput Modes**
    - **Bursting Throughput**: Provides throughput based on the size of the file system. Suitable for most workloads.
    - **Provisioned Throughput**: Allows you to specify throughput independent of the amount of data stored. Ideal for workloads that require high, consistent throughput regardless of file system size.
+
+### 4. **Storage Classes**
+   - **Standard**: For frequently accessed files with low latency and high throughput requirements.
+   - **Infrequent Access (IA)**: For files that are less frequently accessed and stored at a lower cost. EFS automatically moves files to IA based on access patterns to reduce storage costs.
