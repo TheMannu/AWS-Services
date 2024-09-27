@@ -52,3 +52,58 @@ Host a static website on Amazon S3 using the AWS Console.
 2. Scroll down to **Static website hosting**.
 3. You will see the **Bucket website endpoint** URL (e.g., `http://my-static-website.s3-website-us-east-1.amazonaws.com`).
 4. Click the link or copy it to your browser to access your hosted static website.
+
+### Optional Step: Point a Custom Domain to Your S3 Website
+If you want to use a custom domain (e.g., `www.mywebsite.com`), follow these additional steps:
+
+1. **Register a Domain Name**: If you don't already have one, register a domain using Route 53 or another domain registrar.
+2. **Create a Hosted Zone in Route 53**: 
+   - Go to **Route 53** in the AWS Console.
+   - Create a new **Hosted Zone** for your domain (e.g., `mywebsite.com`).
+3. **Add an Alias Record**:
+   - In the Hosted Zone, click **Create Record**.
+   - Choose **Simple Routing**.
+   - Select **A Record** and check the option to use an **Alias**.
+   - In the **Alias Target**, select the **S3 website endpoint** for your bucket.
+   - Click **Create records**.
+
+Now, your custom domain will point to your S3 bucket, and your website will be accessible via your domain (e.g., `www.mywebsite.com`).
+
+### Step 6: Set Up HTTPS with CloudFront (Optional)
+To secure your website with HTTPS, use **CloudFront** as a CDN:
+1. Go to the **CloudFront** service in AWS.
+2. Click **Create Distribution**.
+3. For the origin domain, use the **S3 bucket endpoint**.
+4. Enable **Viewer Protocol Policy** to **Redirect HTTP to HTTPS**.
+5. Set up a free **SSL/TLS certificate** using **AWS Certificate Manager (ACM)**.
+6. Deploy the CloudFront distribution and use the provided CloudFront URL or map it to your custom domain.
+
+---
+---
+
+---
+---
+
+Hosting a static website on Amazon S3 using the AWS CLI:
+
+### Prerequisites:
+- **AWS CLI installed and configured** with appropriate IAM permissions to access and manage S3.
+- A **domain name** if you wish to use Route 53 for DNS.
+  
+---
+### Step 1: Create an S3 Bucket
+The first step is to create an S3 bucket where your website files will be stored. The bucket name must be globally unique, and if you plan to use a custom domain, the bucket name should match the domain name.
+
+```bash
+aws s3 mb s3://your-domain-name.com
+```
+
+### Step 2: Enable Static Website Hosting
+Next, configure the S3 bucket for static website hosting. This tells AWS S3 to treat the bucket as a web host for static content (e.g., HTML, CSS, JS).
+
+```bash
+aws s3 website s3://your-domain-name.com/ --index-document index.html --error-document error.html
+```
+
+- `--index-document`: The file that will be served when users access your website (usually `index.html`).
+- `--error-document`: The file that will be served in case of an error (optional, e.g., `error.html`).
