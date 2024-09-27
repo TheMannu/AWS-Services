@@ -107,3 +107,30 @@ aws s3 website s3://your-domain-name.com/ --index-document index.html --error-do
 
 - `--index-document`: The file that will be served when users access your website (usually `index.html`).
 - `--error-document`: The file that will be served in case of an error (optional, e.g., `error.html`).
+
+
+### Step 3: Set Bucket Policy for Public Access
+By default, S3 buckets are private. To host a website, you'll need to make your bucket and its content publicly accessible. Create a bucket policy using a JSON file to allow public access to your static website.
+
+**Create a file `bucket-policy.json`**:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-domain-name.com/*"
+    }
+  ]
+}
+```
+
+**Apply the bucket policy**:
+
+```bash
+aws s3api put-bucket-policy --bucket your-domain-name.com --policy file://bucket-policy.json
+```
