@@ -134,3 +134,54 @@ By default, S3 buckets are private. To host a website, you'll need to make your 
 ```bash
 aws s3api put-bucket-policy --bucket your-domain-name.com --policy file://bucket-policy.json
 ```
+
+### Step 4: Upload Website Files to S3
+You can now upload your static website files (HTML, CSS, JS) to the S3 bucket.
+
+```bash
+aws s3 sync ./website-folder s3://your-domain-name.com/
+```
+
+This command syncs all files in your `website-folder` to the S3 bucket. Ensure that `index.html` is present in the root of this folder.
+
+### Step 5: (Optional) Configure Custom Domain with Route 53
+
+If you own a custom domain and want to use Route 53 to point it to your S3 bucket:
+
+#### Step 5.1: Create a Hosted Zone in Route 53
+In the Route 53 console or via CLI, create a hosted zone for your domain:
+
+```bash
+aws route53 create-hosted-zone --name your-domain-name.com --caller-reference <unique-string>
+```
+
+#### Step 5.2: Create an Alias Record to Point to S3
+Create an **Alias Record** in Route 53 to point your domain to the S3 bucket.
+
+**Example JSON file for the record set (`route53-record.json`)**:
+
+```json
+{
+  "Comment": "Alias record for S3 static website",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "your-domain-name.com",
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z3AQBSTGFYJSTF",  # S3 website hosted zone ID (for us-east-1)
+          "DNSName": "your-domain-name.com.s3-website-us-east-1.amazonaws.com",
+          "EvaluateTargetHealth": false
+        }
+      }
+    }
+  ]
+}
+```
+
+Apply the Route 53 record change:
+
+```bash
+aws route53 change-resource-record-sets --hosted-zone-id <your-hosted-zone-id> --change-batch file://route53-record.json
+```
