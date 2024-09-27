@@ -19,3 +19,36 @@ Host a static website on Amazon S3 using the AWS Console.
 6. Specify your website’s **index document** (e.g., `index.html`).
 7. Optionally, specify an **error document** (e.g., `error.html`) for error handling.
 8. Click **Save**.
+
+### Step 3: Upload Website Files to the S3 Bucket
+1. In your bucket, navigate to the **Objects** tab.
+2. Click **Upload** and select the website files (e.g., `index.html`, `error.html`, `CSS`/`JS` files).
+3. Click **Add files** or **Add folder** to upload all your website resources.
+4. Click **Upload**.
+
+### Step 4: Configure Bucket Permissions for Public Access
+1. Go to the **Permissions** tab in your bucket.
+2. Scroll down to **Bucket Policy** and click **Edit**.
+3. Add the following **bucket policy** to make your bucket publicly accessible:
+   ```json
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Sid": "PublicReadGetObject",
+         "Effect": "Allow",
+         "Principal": "*",
+         "Action": "s3:GetObject",
+         "Resource": "arn:aws:s3:::my-static-website/*"
+       }
+     ]
+   }
+   ```
+   Replace `my-static-website` with your bucket's name.
+4. Click **Save changes**.
+
+### Step 5: Access Your Static Website
+1. Go back to the **Properties** tab of your bucket.
+2. Scroll down to **Static website hosting**.
+3. You will see the **Bucket website endpoint** URL (e.g., `http://my-static-website.s3-website-us-east-1.amazonaws.com`).
+4. Click the link or copy it to your browser to access your hosted static website.
