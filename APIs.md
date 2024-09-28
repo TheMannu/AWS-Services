@@ -44,3 +44,10 @@ An **Application Programming Interface (API)** is a set of rules, protocols, and
 - Simple, flexible, and easy to adopt by developers.
 - Can be managed and measured for performance and scalability.
 - Offers excellent developer support, fostering fast adoption.
+
+### Examples of APIs:
+1. **Google Maps API**: Enables embedding interactive maps in websites and applications.
+2. **Spotify API**: Allows developers to integrate music streaming features into their apps.
+3. **PayPal API**: Facilitates online payments for e-commerce platforms.
+4. **YouTube API**: Enables interaction with YouTube data like videos, channels, and playlists.
+5. **Amazon API**: Provides access to Amazon’s product listings and order systems for e-commerce integration.
