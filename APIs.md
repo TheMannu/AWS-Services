@@ -37,3 +37,10 @@ An **Application Programming Interface (API)** is a set of rules, protocols, and
 - **Postman**: A powerful HTTP client for manually testing API services, frequently used for exploring and validating APIs.
 - **Ping API**: Allows writing test scripts in JavaScript and CoffeeScript, inspecting HTTP API requests and responses.
 - **vREST**: Provides automated testing, mocking, and specification of REST/HTTP APIs for seamless integration.
+
+### Features of an API:
+- Provides valuable services like data or functionalities (e.g., user management, data processing).
+- Supports planning of business models, especially for product integration.
+- Simple, flexible, and easy to adopt by developers.
+- Can be managed and measured for performance and scalability.
+- Offers excellent developer support, fostering fast adoption.
