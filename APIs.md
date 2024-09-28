@@ -13,4 +13,6 @@ An **Application Programming Interface (API)** is a set of rules, protocols, and
    
 3. **Internal APIs (Private APIs)**: Used within an organization to improve internal productivity.  
    - **Example**: **Amazon's internal APIs** for managing inventory and customer orders.
-  
+   
+4. **Composite APIs**: Combine multiple APIs to handle data and services across different systems.  
+   - **Example**: A travel booking API that combines flights, hotels, and car rental services into one request.
