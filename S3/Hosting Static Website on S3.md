@@ -80,7 +80,7 @@ To secure your website with HTTPS, use **CloudFront** as a CDN:
 
 ---
 ---
-
+### Portfolio - [Ashwani Kumar](http://ashwani-kumar.s3-website-us-east-1.amazonaws.com)
 ---
 ---
 
@@ -185,3 +185,19 @@ Apply the Route 53 record change:
 ```bash
 aws route53 change-resource-record-sets --hosted-zone-id <your-hosted-zone-id> --change-batch file://route53-record.json
 ```
+
+### Step 6: Test the Website
+Your static website should now be hosted on S3. If using Route 53, it may take a few minutes for DNS propagation, after which your website will be accessible via your custom domain.
+
+You can also access the site directly via the S3 website URL:
+```
+http://your-domain-name.com.s3-website-<region>.amazonaws.com
+```
+
+---
+
+### Additional (Optional) Steps:
+1. **Enable SSL**: You can enable SSL/TLS with Amazon CloudFront to serve your website over HTTPS.
+2. **Use CloudFront for CDN**: If you want to improve the performance of your static site globally, you can create a CloudFront distribution to cache your website content at edge locations.
+
+A static website hosted on Amazon S3.
