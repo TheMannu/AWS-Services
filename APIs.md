@@ -32,3 +32,8 @@ An **Application Programming Interface (API)** is a set of rules, protocols, and
   
 - **XML-RPC**: Similar to JSON-RPC, but uses XML over HTTP.
    - **Example**: **WordPress API** for managing blog content.
+
+### API Testing Tools:
+- **Postman**: A powerful HTTP client for manually testing API services, frequently used for exploring and validating APIs.
+- **Ping API**: Allows writing test scripts in JavaScript and CoffeeScript, inspecting HTTP API requests and responses.
+- **vREST**: Provides automated testing, mocking, and specification of REST/HTTP APIs for seamless integration.
