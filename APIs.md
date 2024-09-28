@@ -16,3 +16,19 @@ An **Application Programming Interface (API)** is a set of rules, protocols, and
    
 4. **Composite APIs**: Combine multiple APIs to handle data and services across different systems.  
    - **Example**: A travel booking API that combines flights, hotels, and car rental services into one request.
+
+### Types of Web Service APIs:
+- **SOAP APIs**: A protocol that uses XML messaging for exchanging structured information between web applications.
+   - **Example**: **PayPal SOAP API** for managing payment transactions.
+  
+- **REST APIs**: Use HTTP methods (GET, POST, PUT, DELETE) and are commonly used in web services.
+   - **Example**: **Razorpay API** allows handling online payments through RESTful requests.
+  
+- **GraphQL**: A query language for APIs providing a flexible way to request only the data needed, often reducing response size and time.
+   - **Example**: **GitHub GraphQL API** allows for fine-tuned queries for repository data.
+
+- **JSON-RPC**: Uses JSON for data transfer and remote procedural calls.
+   - **Example**: **Spotify API** uses JSON-RPC for interacting with its music catalog.
+  
+- **XML-RPC**: Similar to JSON-RPC, but uses XML over HTTP.
+   - **Example**: **WordPress API** for managing blog content.
