@@ -100,3 +100,16 @@ Lifecycle rules allow you to automate transitioning objects to cheaper storage c
    - Archive objects to **S3 Glacier** after 90 days.
    - Permanently delete objects after 365 days.
 
+### 10. **Cost Structure**
+   - **Storage Cost**: Varies by storage class. For example, S3 Standard costs more than Glacier.
+   - **Request Cost**: Charges apply for GET, PUT, and other requests made to access or manipulate data.
+   - **Data Transfer**: Costs are incurred for transferring data out of S3 to the internet or to different AWS regions.
+
+### 11. **S3 Access Methods**
+   - **AWS Management Console**: Simple web interface to interact with S3.
+   - **AWS CLI**: Command-line interface for managing S3 buckets and objects.
+   - **SDKs**: AWS SDKs allow developers to integrate S3 into their applications.
+
+### 12. **S3 Event Notifications**
+S3 can send notifications to AWS Lambda, Amazon Simple Notification Service (SNS), or Amazon Simple Queue Service (SQS) when certain events (like object creation or deletion) occur, enabling automated workflows or triggers.
+
