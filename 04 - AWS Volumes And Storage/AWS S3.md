@@ -36,3 +36,58 @@ Amazon Simple Storage Service (S3) is an object storage service that offers indu
    - **Content Storage and Distribution**: Websites and applications can use S3 to store and serve static content such as images, videos, and files.
    - **Big Data Analytics**: S3 serves as a storage layer for big data analytics workloads, and it integrates seamlessly with services like Amazon EMR and Redshift.
    - **Data Archiving**: S3 Glacier and Glacier Deep Archive offer a cost-effective solution for storing long-term archival data.
+
+### 7. **Common Commands for S3 using AWS CLI**
+
+#### **Get the IAM Details**
+```
+aws sts get-caller-identity
+```
+#### **List the buckets inside S3**
+```
+aws s3 ls
+```
+#### **Content inside the s3 bucket**
+```
+aws s3 ls s3://ashwani-kumar
+```
+#### **All content present inside s3 bucket**
+```
+aws s3 ls s3://ashwani-kumar --recursive
+```
+
+#### **Move the content of one bucket to another bucket**
+```
+aws s3 mv s3://Bucket-name/Folder/File s3://Bucket-Name/Folder
+```
+
+#### a. **Create a New S3 Bucket**:
+   ```bash
+   aws s3 mb s3://my-bucket-name
+   ```
+
+#### b. **Upload a File to S3**:
+   ```bash
+   aws s3 cp myfile.txt s3://my-bucket-name/
+   ```
+
+#### c. **List Buckets**:
+   ```bash
+   aws s3 ls
+   ```
+
+#### d. **Download a File from S3**:
+   ```bash
+   aws s3 cp s3://my-bucket-name/myfile.txt ./
+   ```
+
+#### e. **Delete an S3 Bucket**:
+   ```bash
+   aws s3 rb s3://my-bucket-name --force
+   ```
+
+#### f. **Sync a Local Directory to an S3 Bucket**:
+   ```bash
+   aws s3 sync ./local-folder s3://my-bucket-name
+   ```
+
