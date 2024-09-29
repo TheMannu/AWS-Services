@@ -91,3 +91,12 @@ aws s3 mv s3://Bucket-name/Folder/File s3://Bucket-Name/Folder
    aws s3 sync ./local-folder s3://my-bucket-name
    ```
 
+### 8. **Cross-Region Replication (CRR)**
+Cross-Region Replication automatically copies objects from one S3 bucket to another in a different AWS region. This can help with compliance requirements, disaster recovery, and improved data access for geographically dispersed users.
+
+### 9. **Lifecycle Policies**
+Lifecycle rules allow you to automate transitioning objects to cheaper storage classes or deleting them when they are no longer needed. For example:
+   - Transition objects to **S3 Standard-IA** after 30 days.
+   - Archive objects to **S3 Glacier** after 90 days.
+   - Permanently delete objects after 365 days.
+
