@@ -49,3 +49,20 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
    - **S3**:
      - 99.999999999% (11 nines) durability and 99.99% availability.
      - Data is automatically replicated across multiple Availability Zones within a region. Cross-region replication can be enabled for added durability and geo-redundancy.
+
+### 6. **Storage Classes**
+   - **EBS**:
+     - General Purpose SSD (gp3, gp2).
+     - Provisioned IOPS SSD (io2, io1).
+     - Throughput Optimized HDD (st1).
+     - Cold HDD (sc1).
+   - **EFS**:
+     - Standard.
+     - Infrequent Access (IA).
+   - **S3**:
+     - S3 Standard.
+     - Intelligent-Tiering.
+     - Standard-Infrequent Access (IA).
+     - One Zone-IA.
+     - Glacier (for archival).
+     - Glacier Deep Archive (for long-term archival).
