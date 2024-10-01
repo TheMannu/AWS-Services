@@ -33,3 +33,19 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
      - Storing images, videos, logs, and large objects.
      - Hosting static websites, data lakes, and content distribution.
      - Big data analytics where datasets need to be stored long term.
+
+### 4. **Data Access**
+   - **EBS**: Accessible only by the EC2 instance it is attached to (though snapshots can be shared between instances).
+   - **EFS**: Multiple EC2 instances (within the same VPC or across VPCs) can access the same file system concurrently. Supports file access permissions.
+   - **S3**: Globally accessible object storage. Data is accessed via APIs, with no direct file or block-level access.
+
+### 5. **Durability and Availability**
+   - **EBS**:
+     - Designed for 99.999% availability.
+     - Data is replicated within a single Availability Zone (AZ), but not across AZs (unless using snapshots).
+   - **EFS**:
+     - Highly available and durable, automatically replicating data across multiple AZs in a region.
+     - Offers automatic failover within the region.
+   - **S3**:
+     - 99.999999999% (11 nines) durability and 99.99% availability.
+     - Data is automatically replicated across multiple Availability Zones within a region. Cross-region replication can be enabled for added durability and geo-redundancy.
