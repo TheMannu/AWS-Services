@@ -109,3 +109,21 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
      - Supports encryption at rest (server-side and client-side) and in transit.
      - Access controlled via bucket policies, IAM, Access Control Lists (ACLs), and S3 Block Public Access.
      - S3 Object Lock ensures immutability for compliance.
+
+### Summary Table
+
+| Feature                        | EBS                          | EFS                            | S3                               |
+|---------------------------------|------------------------------|---------------------------------|----------------------------------|
+| **Storage Type**                | Block storage (single instance) | Network file storage (shared)   | Object storage (unstructured data) |
+| **Use Cases**                   | Databases, EC2 volumes        | Shared file systems, content management | Backups, media storage, archives |
+| **Access**                      | Single EC2 instance           | Multiple EC2 instances          | Global access via APIs          |
+| **Durability**                  | 99.999%                       | Replicated across AZs           | 99.999999999% (11 nines)        |
+| **Scalability**                 | Manually scalable             | Auto-scaling                    | Infinitely scalable             |
+| **Storage Classes**             | SSD, HDD                      | Standard, Infrequent Access     | Standard, IA, Glacier, Deep Archive |
+| **Pricing**                     | GB/month + IOPS               | Pay per usage (GB/month)        | Pay per usage (GB/month, request costs) |
+| **Encryption**                  | At rest with KMS              | At rest, in transit             | At rest, in transit             |
+
+### Choosing the Right Service:
+- **EBS**: Best for high-performance, low-latency workloads like databases and EC2 instance storage.
+- **EFS**: Ideal for shared file systems where multiple EC2 instances need access to the same data, such as content management or big data applications.
+- **S3**: Suited for large-scale object storage like backups, media storage, and archiving, especially for data that doesn't need frequent updates or low-latency access.
