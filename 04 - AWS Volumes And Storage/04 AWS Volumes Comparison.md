@@ -92,3 +92,20 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
      - Request costs (PUT, GET, DELETE).
      - Data transfer charges (if moving data outside the region).
      - Different pricing for storage classes (Standard, Glacier, IA, etc.).
+
+### 9. **Snapshots and Backups**
+   - **EBS**: Supports snapshots, which can be stored in S3 and used to restore volumes or create new ones. Snapshots are incremental and only save the changes since the last one.
+   - **EFS**: Supports backups using AWS Backup. EFS snapshots allow you to restore your file system to a specific point in time.
+   - **S3**: Objects are stored with versioning capabilities, meaning you can retain multiple versions of the same file. Lifecycle policies allow for automatic deletion or transition to lower-cost storage.
+
+### 10. **Security**
+   - **EBS**:
+     - Data is encrypted at rest using AWS KMS.
+     - Access controlled via IAM roles and security groups.
+   - **EFS**:
+     - Supports encryption at rest and in transit.
+     - NFS-level file permissions and integration with IAM for access control.
+   - **S3**:
+     - Supports encryption at rest (server-side and client-side) and in transit.
+     - Access controlled via bucket policies, IAM, Access Control Lists (ACLs), and S3 Block Public Access.
+     - S3 Object Lock ensures immutability for compliance.
