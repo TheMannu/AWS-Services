@@ -66,3 +66,29 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
      - One Zone-IA.
      - Glacier (for archival).
      - Glacier Deep Archive (for long-term archival).
+
+### 7. **Data Transfer and Access Latency**
+   - **EBS**:
+     - Low-latency, high-performance storage for block-level data.
+     - Data can only be accessed by a single instance, and data transfer between instances requires snapshots.
+   - **EFS**:
+     - Low-latency file access for shared workloads across instances within the same region.
+     - Suitable for applications where multiple EC2 instances need simultaneous access to shared data.
+   - **S3**:
+     - Designed for high-latency, massive throughput scenarios.
+     - Accessed via RESTful APIs or SDKs, making it ideal for infrequent access to large datasets.
+
+### 8. **Pricing Model**
+   - **EBS**:
+     - Pay for the provisioned capacity in GB/month (for volume size).
+     - Pay for IOPS for certain volume types (Provisioned IOPS SSD).
+     - Additional cost for snapshots.
+   - **EFS**:
+     - Pay for the amount of data stored (GB/month).
+     - Different pricing for **Standard** and **Infrequent Access** storage classes.
+     - No upfront provisioning; costs are based on actual usage.
+   - **S3**:
+     - Pay for storage in GB/month.
+     - Request costs (PUT, GET, DELETE).
+     - Data transfer charges (if moving data outside the region).
+     - Different pricing for storage classes (Standard, Glacier, IA, etc.).
