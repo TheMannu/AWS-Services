@@ -18,3 +18,18 @@ Comparison of **Amazon Elastic Block Store (EBS)**, **Amazon Elastic File System
      - Infinitely scalable with automatic scaling based on object storage needs.
      - Designed for massive throughput and storing billions of objects.
      - Suitable for static websites, backups, media files, and large-scale data analytics.
+
+### 3. **Use Cases**
+   - **EBS**:
+     - Databases like MySQL, MongoDB, and SQL Server.
+     - Persistent storage for EC2 instances where performance is critical.
+     - Use cases that require high IOPS or throughput like high-performance applications.
+   - **EFS**:
+     - Shared storage across multiple EC2 instances.
+     - Content management systems, web serving, development environments, and big data analytics that require access from multiple servers.
+     - Workloads that require a POSIX-compliant file system.
+   - **S3**:
+     - Backup, archiving, and disaster recovery.
+     - Storing images, videos, logs, and large objects.
+     - Hosting static websites, data lakes, and content distribution.
+     - Big data analytics where datasets need to be stored long term.
