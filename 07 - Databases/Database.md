@@ -31,3 +31,13 @@ A **database** is an organized collection of data, structured for easy access, m
    - **Examples**: Redis, Memcached.
    - **Key Concepts**: Low-latency data access, Cache, Eviction policies.
    - **Best For**: Real-time applications, caching, session management, and quick data retrieval.
+
+6. **Object-Oriented Databases**
+   - **Description**: Store data in the form of objects, much like object-oriented programming languages.
+   - **Examples**: db4o, ObjectDB.
+   - **Best For**: Applications with complex data structures and object-oriented relationships.
+   
+7. **NewSQL Databases**
+   - **Description**: Combines the scalability of NoSQL with the ACID guarantees of traditional SQL databases.
+   - **Examples**: Google Spanner, CockroachDB.
+   - **Best For**: High-performance transactional applications requiring scalability and consistency.
