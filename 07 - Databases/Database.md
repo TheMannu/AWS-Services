@@ -50,3 +50,8 @@ A **database** is an organized collection of data, structured for easy access, m
 - **Transactions**: Support for transactions ensures data consistency (ACID properties: Atomicity, Consistency, Isolation, Durability).
 - **Security**: Databases offer encryption, access control, and backup mechanisms to protect data.
 - **Scalability**: Modern databases are designed to scale vertically (more resources on one server) or horizontally (distribute across multiple servers).
+
+
+### **Common Database Technologies:**
+- **SQL-based**: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+- **NoSQL-based**: MongoDB, Cassandra, Redis, Neo4j.
