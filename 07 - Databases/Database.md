@@ -9,8 +9,13 @@ A **database** is an organized collection of data, structured for easy access, m
    - **Best For**: Structured data with clear relationships, such as transactional applications, financial records, or e-commerce systems.
 
 2. **NoSQL Databases (Non-Relational)**
-   - **Description**: Designed for more flexible data structures like key-value pairs, documents, graphs, or column-family stores.
+   - **Description**: Non-relational databases that store data in a variety of formats (document, key-value, wide-column, graph). Suitable for unstructured or semi-structured data.
    - **Examples**: MongoDB (document), Redis (key-value), Cassandra (column-family), Neo4j (graph).
    - **Key Concepts**: Collections, Documents, Nodes, Edges, Scalability, Schema-less.
    - **Best For**: Large volumes of unstructured or semi-structured data, real-time applications, big data, and distributed systems.
 
+3. **Time-Series Databases**
+   - **Description**: Optimized for storing and querying time-stamped data, ideal for monitoring, sensor data, and financial data.(e.g., metrics, events, sensor data).
+   - **Examples**: InfluxDB, Prometheus, TimescaleDB.
+   - **Key Concepts**: Time-series, Aggregation, Downsampling.
+   - **Best For**: IoT, monitoring, logging, and financial applications where time-based data is key.
