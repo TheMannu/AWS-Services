@@ -42,3 +42,11 @@ A **database** is an organized collection of data, structured for easy access, m
    - **Examples**: Google Spanner, CockroachDB.
    - **Key Concepts**: Distributed transactions, Sharding, ACID compliance.
    - **Best For**: High-performance transactional applications requiring scalability and consistency.
+
+### **Key Features of Databases:**
+
+- **Storage**: Databases store data in an organized way (tables, documents, key-value pairs, etc.).
+- **Querying**: Databases allow data to be queried using SQL, NoSQL queries, or other specific query languages.
+- **Transactions**: Support for transactions ensures data consistency (ACID properties: Atomicity, Consistency, Isolation, Durability).
+- **Security**: Databases offer encryption, access control, and backup mechanisms to protect data.
+- **Scalability**: Modern databases are designed to scale vertically (more resources on one server) or horizontally (distribute across multiple servers).
