@@ -36,8 +36,9 @@ A **database** is an organized collection of data, structured for easy access, m
    - **Description**: Store data in the form of objects, much like object-oriented programming languages.
    - **Examples**: db4o, ObjectDB.
    - **Best For**: Applications with complex data structures and object-oriented relationships.
-   
+
 7. **NewSQL Databases**
-   - **Description**: Combines the scalability of NoSQL with the ACID guarantees of traditional SQL databases.
+   - **Description**: NewSQL databases aim to combine the ACID properties of traditional RDBMS with the scalability of NoSQL databases.Combines the scalability of NoSQL with the ACID guarantees of traditional SQL databases.
    - **Examples**: Google Spanner, CockroachDB.
+   - **Key Concepts**: Distributed transactions, Sharding, ACID compliance.
    - **Best For**: High-performance transactional applications requiring scalability and consistency.
