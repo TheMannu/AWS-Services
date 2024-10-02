@@ -25,3 +25,9 @@ A **database** is an organized collection of data, structured for easy access, m
    - **Examples**: Neo4j, Amazon Neptune.
    - **Key Concepts**: Nodes, Edges, Properties, Graph traversal.
    - **Best For**: Social networks, fraud detection, recommendation engines, and applications with highly interconnected data.
+
+5. **In-Memory Databases**
+   - **Description**: Data is primarily stored in memory (RAM) for faster access, ideal for caching or real-time analytics.
+   - **Examples**: Redis, Memcached.
+   - **Key Concepts**: Low-latency data access, Cache, Eviction policies.
+   - **Best For**: Real-time applications, caching, session management, and quick data retrieval.
