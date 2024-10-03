@@ -24,3 +24,10 @@ There are several types of databases, each designed for different use cases and 
   - Schema-less or dynamic schema.
   - Horizontal scalability, making it ideal for distributed systems.
   - Typically optimized for high availability and partition tolerance.
+
+#### a. **Document Stores**
+- **Data Model**: Stores data in document format (usually JSON, BSON, or XML).
+- **Use Cases**: Content management, user profiles, e-commerce, catalogs.
+- **Examples**:
+  - **MongoDB**: Most popular document store, stores data in JSON-like format.
+  - **CouchDB**: Stores data as JSON documents, with strong replication support.
