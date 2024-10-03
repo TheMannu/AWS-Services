@@ -39,3 +39,10 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Redis**: In-memory key-value store, known for fast performance.
   - **Amazon DynamoDB**: Fully managed NoSQL key-value store by AWS.
+
+#### c. **Column-Family Stores**
+- **Data Model**: Stores data in columns rather than rows, allowing efficient retrieval of large datasets.
+- **Use Cases**: Analytical workloads, real-time big data.
+- **Examples**:
+  - **Apache Cassandra**: Highly scalable NoSQL database, optimized for distributed systems.
+  - **HBase**: Runs on top of Hadoop and is optimized for real-time processing of big data.
