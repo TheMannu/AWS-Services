@@ -15,3 +15,12 @@ There are several types of databases, each designed for different use cases and 
   - **PostgreSQL**: Advanced open-source RDBMS with support for complex queries, indexing, and JSON.
   - **Oracle Database**: Enterprise-grade relational database, known for handling large-scale operations.
   - **Microsoft SQL Server**: Proprietary RDBMS used in enterprise environments.
+
+---
+
+### **2. NoSQL Databases (Not Only SQL)**
+- **Definition**: These databases do not require a predefined schema and are optimized for scalability and flexibility. They are designed to handle large volumes of unstructured, semi-structured, or structured data.
+- **Characteristics**:
+  - Schema-less or dynamic schema.
+  - Horizontal scalability, making it ideal for distributed systems.
+  - Typically optimized for high availability and partition tolerance.
