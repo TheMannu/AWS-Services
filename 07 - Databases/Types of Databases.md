@@ -46,3 +46,12 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Apache Cassandra**: Highly scalable NoSQL database, optimized for distributed systems.
   - **HBase**: Runs on top of Hadoop and is optimized for real-time processing of big data.
+
+#### d. **Graph Databases**
+- **Data Model**: Represents data as nodes (entities) and edges (relationships), useful for modeling complex relationships.
+- **Use Cases**: Social networks, fraud detection, recommendation engines.
+- **Examples**:
+  - **Neo4j**: The most widely-used graph database.
+  - **Amazon Neptune**: Fully managed graph database service by AWS.
+
+---
