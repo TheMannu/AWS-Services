@@ -55,3 +55,14 @@ There are several types of databases, each designed for different use cases and 
   - **Amazon Neptune**: Fully managed graph database service by AWS.
 
 ---
+
+### **3. Time-Series Databases**
+- **Definition**: These databases are optimized for handling time-stamped or time-series data, such as log data, sensor data, or financial transactions.
+- **Characteristics**:
+  - Efficiently stores and queries data indexed by time.
+  - Often used for real-time analytics or monitoring.
+  
+- **Use Cases**: Monitoring systems, IoT, financial data, metrics, logs.
+- **Examples**:
+  - **InfluxDB**: Open-source time-series database designed for real-time analytics.
+  - **Prometheus**: Monitoring and alerting system with a built-in time-series database.
