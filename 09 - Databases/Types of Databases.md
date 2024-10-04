@@ -92,3 +92,16 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Neo4j**: Leading graph database, known for handling complex relationships.
   - **JanusGraph**: Distributed graph database designed for large graphs.
+
+---
+
+### **6. NewSQL Databases**
+- **Definition**: NewSQL databases aim to bring the benefits of NoSQL (scalability and performance) while maintaining the relational model and ACID properties of traditional SQL databases.
+- **Characteristics**:
+  - Combines the best of both SQL and NoSQL.
+  - Horizontal scalability with ACID guarantees.
+
+- **Use Cases**: High-performance transactional applications that require scalability and consistency.
+- **Examples**:
+  - **Google Spanner**: Distributed SQL database by Google, with global consistency and horizontal scalability.
+  - **CockroachDB**: Distributed SQL database designed for global scalability and strong consistency.
