@@ -79,3 +79,16 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **db4o**: Object-oriented database for Java and .NET.
   - **ObjectDB**: A high-performance, object-oriented database system for Java.
+
+---
+
+### **5. Graph Databases**
+- **Definition**: Graph databases store data in graph structures, consisting of nodes, edges, and properties. Nodes represent entities, edges represent relationships, and properties store information about the nodes and edges.
+- **Characteristics**:
+  - Highly efficient for querying complex relationships.
+  - Suited for interconnected data.
+
+- **Use Cases**: Social networks, recommendation engines, fraud detection.
+- **Examples**:
+  - **Neo4j**: Leading graph database, known for handling complex relationships.
+  - **JanusGraph**: Distributed graph database designed for large graphs.
