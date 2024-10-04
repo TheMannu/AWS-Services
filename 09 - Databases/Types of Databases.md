@@ -105,3 +105,16 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Google Spanner**: Distributed SQL database by Google, with global consistency and horizontal scalability.
   - **CockroachDB**: Distributed SQL database designed for global scalability and strong consistency.
+
+---
+
+### **7. In-Memory Databases**
+- **Definition**: These databases store data in-memory (RAM) instead of disk storage, offering extremely fast read and write operations. They are ideal for applications where low latency is critical.
+- **Characteristics**:
+  - Extremely fast due to in-memory storage.
+  - Data may be lost on restart unless it's periodically written to disk.
+
+- **Use Cases**: Real-time applications, caching, session management.
+- **Examples**:
+  - **Redis**: In-memory key-value store, used for caching and real-time analytics.
+  - **Memcached**: Simple, in-memory caching system for quick data retrieval.
