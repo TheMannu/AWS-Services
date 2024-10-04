@@ -156,3 +156,15 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Apache HBase**: Column-oriented NoSQL database.
   - **Google Bigtable**: Fully managed, scalable NoSQL database by Google.
+
+---
+
+### Conclusion
+
+Each type of database is suited for different use cases and data models - 
+
+- **SQL/Relational**: Great for structured data with clear relationships.
+- **NoSQL**: Flexible, scalable, and suited for unstructured or semi-structured data.
+- **Specialized Databases** (Time-series, Graph, Object-oriented, etc.): Designed for specific use cases, such as handling time-based data, complex relationships, or object storage.
+
+Selecting the right type of database depends on our application’s specific needs, such as scalability, data structure, and query complexity.
