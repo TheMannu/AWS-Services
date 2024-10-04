@@ -130,3 +130,16 @@ There are several types of databases, each designed for different use cases and 
 - **Use Cases**: Legacy systems, especially in the telecommunications and banking industries.
 - **Examples**:
   - **IBM Information Management System (IMS)**: A hierarchical database management system.
+
+---
+
+### **9. Multi-Model Databases**
+- **Definition**: These databases support multiple data models (e.g., relational, document, graph) within a single database engine.
+- **Characteristics**:
+  - Combines different data models in one system.
+  - Reduces the need for multiple databases for different use cases.
+  
+- **Use Cases**: Applications with diverse data types and relationships.
+- **Examples**:
+  - **ArangoDB**: Supports document, graph, and key-value models.
+  - **OrientDB**: Multi-model database with support for graph, document, and object-oriented models.
