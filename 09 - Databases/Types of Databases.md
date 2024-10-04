@@ -143,3 +143,16 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **ArangoDB**: Supports document, graph, and key-value models.
   - **OrientDB**: Multi-model database with support for graph, document, and object-oriented models.
+
+---
+
+### **10. Columnar Databases**
+- **Definition**: Columnar databases store data by columns rather than rows, which can significantly improve read performance for certain types of queries, especially in analytics and data warehousing.
+- **Characteristics**:
+  - Optimized for read-heavy workloads.
+  - Faster query performance for analytical queries.
+  
+- **Use Cases**: Data warehousing, business intelligence, analytics.
+- **Examples**:
+  - **Apache HBase**: Column-oriented NoSQL database.
+  - **Google Bigtable**: Fully managed, scalable NoSQL database by Google.
