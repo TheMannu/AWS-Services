@@ -66,3 +66,16 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **InfluxDB**: Open-source time-series database designed for real-time analytics.
   - **Prometheus**: Monitoring and alerting system with a built-in time-series database.
+
+---
+
+### **4. Object-Oriented Databases**
+- **Definition**: These databases store data in the form of objects, similar to the way data is represented in object-oriented programming (OOP). Each object contains both data (attributes) and methods (procedures).
+- **Characteristics**:
+  - Integrates well with object-oriented languages like Java, C++, etc.
+  - Objects can inherit properties from other objects.
+  
+- **Use Cases**: Complex applications where object relationships are important.
+- **Examples**:
+  - **db4o**: Object-oriented database for Java and .NET.
+  - **ObjectDB**: A high-performance, object-oriented database system for Java.
