@@ -118,3 +118,15 @@ There are several types of databases, each designed for different use cases and 
 - **Examples**:
   - **Redis**: In-memory key-value store, used for caching and real-time analytics.
   - **Memcached**: Simple, in-memory caching system for quick data retrieval.
+
+---
+
+### **8. Hierarchical Databases**
+- **Definition**: Hierarchical databases organize data in a tree-like structure, where each record has a parent-child relationship. Each parent can have multiple children, but each child only has one parent.
+- **Characteristics**:
+  - Data is organized in a hierarchy.
+  - Efficient for hierarchical data models but lacks flexibility.
+
+- **Use Cases**: Legacy systems, especially in the telecommunications and banking industries.
+- **Examples**:
+  - **IBM Information Management System (IMS)**: A hierarchical database management system.
