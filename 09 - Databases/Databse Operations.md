@@ -35,3 +35,23 @@ sudo apt install redis-server
 sudo systemctl enable redis-server
 sudo systemctl start redis-server
 ```
+
+### **Database Queries and Commands**
+
+#### a. **Basic SQL Queries (MySQL/PostgreSQL)**
+- **Select Data**: 
+  ```sql
+  SELECT * FROM table_name;
+  ```
+- **Insert Data**:
+  ```sql
+  INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+  ```
+- **Update Data**:
+  ```sql
+  UPDATE table_name SET column1 = value1 WHERE condition;
+  ```
+- **Delete Data**:
+  ```sql
+  DELETE FROM table_name WHERE condition;
+  ```
