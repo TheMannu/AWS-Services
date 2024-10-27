@@ -55,3 +55,22 @@ sudo systemctl start redis-server
   ```sql
   DELETE FROM table_name WHERE condition;
   ```
+
+
+#### b. **MongoDB Queries**
+- **Insert Document**:
+  ```js
+  db.collection_name.insert({ "name": "example", "age": 30 });
+  ```
+- **Find Document**:
+  ```js
+  db.collection_name.find({ "name": "example" });
+  ```
+- **Update Document**:
+  ```js
+  db.collection_name.update({ "name": "example" }, { $set: { "age": 31 } });
+  ```
+- **Delete Document**:
+  ```js
+  db.collection_name.remove({ "name": "example" });
+  ```
