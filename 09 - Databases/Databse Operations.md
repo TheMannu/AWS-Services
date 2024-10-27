@@ -106,3 +106,22 @@ sudo systemctl start redis-server
   ```bash
   mongorestore /backup/folder/
   ```
+
+
+### 6. **Database Performance Optimization**
+  
+#### a. **Indexes**: Indexes speed up query performance by allowing faster data retrieval.
+  - **MySQL Example**:
+    ```sql
+    CREATE INDEX idx_column_name ON table_name (column_name);
+    ```
+
+#### b. **Sharding**: Horizontal partitioning of data across multiple servers to distribute the load (MongoDB, Cassandra).
+
+#### c. **Query Optimization**: Analyze and optimize SQL queries to reduce execution time.
+  - **EXPLAIN Query**:
+    ```sql
+    EXPLAIN SELECT * FROM table_name WHERE condition;
+    ```
+
+#### d. **Caching**: Use caching systems (e.g., Redis, Memcached) to store frequently accessed data in memory, reducing load on the database.
