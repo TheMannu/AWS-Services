@@ -1,6 +1,6 @@
 A **database** is an organized collection of data, structured for easy access, management, and updating. Databases are critical for storing, retrieving, and managing data for various applications and services. Here’s a more detailed look at databases:
 
-### **Types of Databases:**
+### 1. **Types of Databases:**
 
 1. **Relational Databases (SQL)**
    - **Description**: Data is stored in structured formats,Organize data into tables with predefined relationships. Uses SQL (Structured Query Language) for querying and managing data.
@@ -63,3 +63,21 @@ A **database** is an organized collection of data, structured for easy access, m
 - **Big Data**: Applications requiring handling of large, complex datasets, such as social media or analytics platforms.
 
 Databases are integral to most modern applications, enabling businesses to store, manage, and process data efficiently.
+
+### 2. **Database Management Systems (DBMS)**
+
+#### a. **MySQL**
+- **Type**: Relational
+- **Key Features**: Open-source, widely used, supports replication, clustering, and multi-user access.
+  
+#### b. **PostgreSQL**
+- **Type**: Relational
+- **Key Features**: Advanced SQL features, strong community, supports both relational and JSON data types.
+
+#### c. **MongoDB**
+- **Type**: NoSQL (Document-based)
+- **Key Features**: Stores data in JSON-like BSON format, highly scalable, flexible schemas.
+
+#### d. **Redis**
+- **Type**: In-Memory, NoSQL
+- **Key Features**: Simple key-value store, very fast, supports data structures like strings, hashes, lists, sets, and sorted sets.
