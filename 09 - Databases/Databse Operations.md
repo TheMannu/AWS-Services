@@ -74,3 +74,35 @@ sudo systemctl start redis-server
   ```js
   db.collection_name.remove({ "name": "example" });
   ```
+
+### 5. **Database Backup and Restore**
+
+#### a. **MySQL**
+- **Backup**:
+  ```bash
+  mysqldump -u username -p database_name > backup.sql
+  ```
+- **Restore**:
+  ```bash
+  mysql -u username -p database_name < backup.sql
+  ```
+
+#### b. **PostgreSQL**
+- **Backup**:
+  ```bash
+  pg_dump dbname > backup.sql
+  ```
+- **Restore**:
+  ```bash
+  psql dbname < backup.sql
+  ```
+
+#### c. **MongoDB**
+- **Backup**:
+  ```bash
+  mongodump --out /backup/folder/
+  ```
+- **Restore**:
+  ```bash
+  mongorestore /backup/folder/
+  ```
