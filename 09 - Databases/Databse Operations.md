@@ -142,3 +142,16 @@ sudo systemctl start redis-server
 
 #### d. **Firewalls**
 - Configure network-level firewalls to restrict database access to specific IP addresses or subnets.
+
+### 8. **Database Replication and Clustering**
+
+#### a. **Replication**
+- **Master-Slave**: The master database handles all write operations, while slave databases replicate the data and handle read operations.
+  - **Example**: MySQL replication.
+  
+#### b. **Clustering**
+- **Multi-Master**: Allows multiple database nodes to accept write operations, providing higher availability.
+  - **Example**: Galera Cluster for MySQL.
+
+#### c. **Sharding**
+- Partition data horizontally across multiple nodes, often used in NoSQL databases for scaling.
