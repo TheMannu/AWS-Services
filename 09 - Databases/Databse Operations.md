@@ -125,3 +125,20 @@ sudo systemctl start redis-server
     ```
 
 #### d. **Caching**: Use caching systems (e.g., Redis, Memcached) to store frequently accessed data in memory, reducing load on the database.
+
+### 7. **Database Security**
+
+#### a. **Authentication and Authorization**
+- Use strong passwords for database users.
+- Implement role-based access control (RBAC) to limit user permissions.
+
+#### b. **Data Encryption**
+- Enable encryption at rest and in transit to protect sensitive data.
+  - **MySQL**: Supports Transparent Data Encryption (TDE) for data at rest.
+  - **PostgreSQL**: Uses SSL/TLS for data in transit.
+
+#### c. **Audit Logs**
+- Enable logging of database activity to monitor any unauthorized access or changes.
+
+#### d. **Firewalls**
+- Configure network-level firewalls to restrict database access to specific IP addresses or subnets.
