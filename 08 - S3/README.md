@@ -1,6 +1,6 @@
-# 🎓 AWS Course: S3 Module
+# 🎓 AWS Learning: S3 Module
 
-![S3 Overview](s3.png)
+![S3 Overview](image.png)
 
 This folder contains comprehensive notes on Amazon S3. Click the links below to navigate to the corresponding sections.
 
@@ -21,4 +21,12 @@ Amazon S3 (Simple Storage Service) provides scalable object storage for a wide r
 - **Data Management**: Features versioning, lifecycle policies, and event notifications for data automation and management.
 - **Use Cases**: From hosting static websites, managing backups, to being a storage backend for big data analytics.
   
-For more details, explore the topics below!
+---
+
+Static Portfolio Website hosted on S3 Bucket.
+
+---
+---
+### Portfolio - [Ashwani Kumar](http://ashwani-kumar.s3-website-us-east-1.amazonaws.com)
+---
+---
