@@ -63,7 +63,7 @@ We welcome contributions from everyone! Here's how you can help:
 4. **📬 Submit a Pull Request**: Submit your changes with a clear description, and we'll review them!
 
 ## 📚 Useful Resources and References
-Boost your learning with these additional resources:
+Boost learning with these additional resources:
 
 - **📖 [AWS Official Documentation](https://aws.amazon.com/documentation/)**: In-depth guides straight from AWS.
 - **🎓 [AWS Skill Builder](https://skillbuilder.aws/)**: Free training resources and certification prep.
@@ -73,8 +73,16 @@ Stay connected for more insights and opportunities:
 
 - **🔗 [LinkedIn](https://www.linkedin.com/in/ashwank/)**: Connect with me on LinkedIn for networking and professional updates.
 
-## 📄 Course Outline
-A detailed course outline is available in PDF format:
+---
+
+
+* ## Portfolio - [Ashwani Kumar](http://ashwani-kumar.s3-website-us-east-1.amazonaws.com)
+
+
+---
+
+## 📄 AWS Outline
+A detailed AWS Services outline is available in PDF format:
 
 - 📂 [ AWS Cloud Services List ](https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJGI4N2Y2NDk3LThkMGEtNGNmYS04NjQ1LTQ1MGJkOGM4MzBmMQ?s=1)
 
