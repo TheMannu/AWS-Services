@@ -50,7 +50,7 @@ Host a static website on Amazon S3 using the AWS Console.
 ### Step 5: Access Your Static Website
 1. Go back to the **Properties** tab of your bucket.
 2. Scroll down to **Static website hosting**.
-3. You will see the **Bucket website endpoint** URL (e.g., `http://my-static-website.s3-website-us-east-1.amazonaws.com`).
+3. You will see the **Bucket website endpoint** URL (e.g., (http://ashwani-kumar.s3-website-us-east-1.amazonaws.com)).
 4. Click the link or copy it to your browser to access your hosted static website.
 
 ### Optional Step: Point a Custom Domain to Your S3 Website
