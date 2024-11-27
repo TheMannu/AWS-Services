@@ -22,3 +22,27 @@ If you're running an e-commerce platform where uptime is crucial, S3 ensures tha
 
 **Example:**
 If you want only authenticated users to upload files to your bucket `my-photo-app`, but allow the public to download them, you can use bucket policies to set those permissions.
+
+### S3 CLI Commands
+
+AWS provides a command-line interface (CLI) to manage S3 resources. Common commands include:
+
+- **List buckets:**
+  ```bash
+  aws s3 ls
+  ```
+
+- **Upload a file to S3:**
+  ```bash
+  aws s3 cp myfile.txt s3://my-photo-app/
+  ```
+
+- **Download a file from S3:**
+  ```bash
+  aws s3 cp s3://my-photo-app/myfile.txt ./local-dir/
+  ```
+
+- **List objects in a bucket:**
+  ```bash
+  aws s3 ls s3://my-photo-app/
+  ```
