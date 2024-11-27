@@ -72,3 +72,11 @@ The **S3 Storage Calculator** helps estimate costs based on factors like data vo
 
 **Example:**
 If you store 100 GB of data and expect 100,000 GET requests per month, the calculator will help you forecast the cost based on these factors.
+
+### Key Concepts of S3
+
+- **Buckets**: S3 organizes data into containers called buckets. A bucket can store an unlimited number of objects, and each object is identified by a unique key.
+- **Objects**: The fundamental entities stored in S3, which include the actual data (files) and associated metadata. Objects can be as large as 5 TB.
+- **Versioning**: S3 allows you to retain multiple versions of an object. This helps in retrieving or restoring a previous version of an object.
+- **Access Control**: You can manage access to S3 buckets and objects using bucket policies, AWS Identity and Access Management (IAM), and Access Control Lists (ACLs).
+- **Lifecycle Policies**: Automated policies that move data between different storage classes or delete data after a specified period, based on its lifecycle.
