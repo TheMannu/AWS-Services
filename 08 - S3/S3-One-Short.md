@@ -46,3 +46,22 @@ AWS provides a command-line interface (CLI) to manage S3 resources. Common comma
   ```bash
   aws s3 ls s3://my-photo-app/
   ```
+
+### S3 Storage Classes
+
+S3 offers several **storage classes**, each optimized for different use cases:
+
+- **S3 Standard:** Best for frequently accessed data with low-latency and high-throughput.
+
+- **S3 Intelligent-Tiering:** Automatically moves objects to the most cost-effective  access tier (frequent and infrequent) based on usage patterns.
+
+- **S3 Standard-IA (Infrequent Access):** For data accessed less frequently but requires rapid access when needed.
+
+- **S3 One Zone-Infrequent Access (One Zone-IA)**: For infrequently accessed data stored in a single availability zone.
+
+- **S3 Glacier**: Low-cost storage for long-term archival and backup with retrieval times ranging from minutes to hours.
+
+- **S3 Glacier Deep Archive:** Lowest-cost option designed for data that is rarely accessed, with retrieval times from 12 hours or more.
+
+**Example:**
+If you’re storing old backup files that you rarely need to access, Glacier or Glacier Deep Archive is a cost-effective option.
