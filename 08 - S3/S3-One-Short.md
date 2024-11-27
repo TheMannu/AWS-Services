@@ -11,3 +11,14 @@ Amazon S3 is designed to provide **99.999999999% (11 nines)** of durability and 
 
 **Example:**
 If you're running an e-commerce platform where uptime is crucial, S3 ensures that your product images and assets are always available to your customers without worrying about hardware failures.
+
+### S3 Policies
+
+**S3 Policies** control access to your buckets and objects. There are several types of policies:
+
+- **Bucket policies:** Control access to the entire bucket.
+- **User policies:** Applied to individual IAM users or groups, specifying what actions they can perform on S3 buckets.
+- **Object-level policies:** Applied directly to objects to override the bucket-level permissions.
+
+**Example:**
+If you want only authenticated users to upload files to your bucket `my-photo-app`, but allow the public to download them, you can use bucket policies to set those permissions.
