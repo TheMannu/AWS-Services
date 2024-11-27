@@ -80,3 +80,9 @@ If you store 100 GB of data and expect 100,000 GET requests per month, the calcu
 - **Versioning**: S3 allows you to retain multiple versions of an object. This helps in retrieving or restoring a previous version of an object.
 - **Access Control**: You can manage access to S3 buckets and objects using bucket policies, AWS Identity and Access Management (IAM), and Access Control Lists (ACLs).
 - **Lifecycle Policies**: Automated policies that move data between different storage classes or delete data after a specified period, based on its lifecycle.
+
+### S3 Security 
+
+- **Encryption**: Data can be encrypted in transit using SSL and at rest using server-side encryption with AWS Key Management Service (KMS) or client-side encryption.
+- **Access Control**: S3 integrates with AWS IAM to control access to buckets and objects. You can use policies and ACLs to manage access.
+- **S3 Block Public Access**: A security feature that prevents the accidental exposure of S3 data to the public.
