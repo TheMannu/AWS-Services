@@ -65,3 +65,10 @@ S3 offers several **storage classes**, each optimized for different use cases:
 
 **Example:**
 If you’re storing old backup files that you rarely need to access, Glacier or Glacier Deep Archive is a cost-effective option.
+
+### S3 Storage Calculator
+
+The **S3 Storage Calculator** helps estimate costs based on factors like data volume, number of requests, and data transfer. You input the amount of storage, retrieval requests, and data transfer to see the estimated monthly cost.
+
+**Example:**
+If you store 100 GB of data and expect 100,000 GET requests per month, the calculator will help you forecast the cost based on these factors.
