@@ -86,3 +86,22 @@ If you store 100 GB of data and expect 100,000 GET requests per month, the calcu
 - **Encryption**: Data can be encrypted in transit using SSL and at rest using server-side encryption with AWS Key Management Service (KMS) or client-side encryption.
 - **Access Control**: S3 integrates with AWS IAM to control access to buckets and objects. You can use policies and ACLs to manage access.
 - **S3 Block Public Access**: A security feature that prevents the accidental exposure of S3 data to the public.
+
+### S3 Permission Policies
+
+**S3 permission policies** define what users can do with your S3 resources. These policies are written in JSON format and applied at various levels—bucket, user, or object level.
+
+**Example:**
+If you want an external vendor to upload files but not delete them, you can apply a policy like this:
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::my-photo-app/*"
+    }
+  ]
+}
+```
