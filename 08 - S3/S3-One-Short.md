@@ -150,3 +150,12 @@ aws s3 ls
 ```
 aws s3 ls s3://ashwani-kumar
 ```
+#### **All content present inside s3 bucket**
+```
+aws s3 ls s3://ashwani-kumar --recursive
+```
+
+#### **Move the content of one bucket to another bucket**
+```
+aws s3 mv s3://Bucket-name/Folder/File s3://Bucket-Name/Folder
+```
