@@ -122,3 +122,9 @@ If you have sensitive data, use server-side encryption with AWS Key Management S
 ```bash
 aws s3api put-bucket-encryption --bucket my-photo-app --server-side-encryption-configuration '{"Rules":[{"ApplyServerSideEncryptionByDefault":{"SSEAlgorithm":"aws:kms"}}]}'
 ```
+
+### Data Management Features
+
+- **S3 Transfer Acceleration**: Speeds up data transfers to S3 by routing them through optimized network paths using AWS edge locations.
+- **Replication**: S3 supports cross-region replication (CRR) and same-region replication (SRR) for data redundancy, disaster recovery, and compliance needs.
+- **S3 Object Lock**: Prevents objects from being deleted or overwritten for a specified period or indefinitely, ensuring immutability for compliance.
