@@ -135,3 +135,18 @@ aws s3api put-bucket-encryption --bucket my-photo-app --server-side-encryption-c
 - **Content Storage and Distribution**: Websites and applications can use S3 to store and serve static content such as images, videos, and files.
 - **Big Data Analytics**: S3 serves as a storage layer for big data analytics workloads, and it integrates seamlessly with services like Amazon EMR and Redshift.
 - **Data Archiving**: S3 Glacier and Glacier Deep Archive offer a cost-effective solution for storing long-term archival data.
+
+### Common Commands for S3 using AWS CLI
+
+#### **Get the IAM Details**
+```
+aws sts get-caller-identity
+```
+#### **List the buckets inside S3**
+```
+aws s3 ls
+```
+#### **Content inside the s3 bucket**
+```
+aws s3 ls s3://ashwani-kumar
+```
