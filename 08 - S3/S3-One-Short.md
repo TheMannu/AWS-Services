@@ -200,3 +200,10 @@ Lifecycle rules allow you to automate transitioning objects to cheaper storage c
   - Transition objects to **S3 Standard-IA** after 30 days.
   - Archive objects to **S3 Glacier** after 90 days.
   - Permanently delete objects after 365 days.
+
+### Cost Structure
+
+- **Storage Cost**: Varies by storage class. For example, S3 Standard costs more than Glacier.
+- **Request Cost**: Charges apply for GET, PUT, and other requests made to access or manipulate data.
+- **Data Transfer**: Costs are incurred for transferring data out of S3 to the internet or to different AWS regions.
+
