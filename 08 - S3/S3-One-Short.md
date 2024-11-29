@@ -189,3 +189,7 @@ aws s3 mv s3://Bucket-name/Folder/File s3://Bucket-Name/Folder
   ```bash
   aws s3 sync ./local-folder s3://my-bucket-name
   ```
+
+### Cross-Region Replication (CRR)
+
+Cross-Region Replication automatically copies objects from one S3 bucket to another in a different AWS region. This can help with compliance requirements, disaster recovery, and improved data access for geographically dispersed users.
