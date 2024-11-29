@@ -159,3 +159,33 @@ aws s3 ls s3://ashwani-kumar --recursive
 ```
 aws s3 mv s3://Bucket-name/Folder/File s3://Bucket-Name/Folder
 ```
+
+#### a. **Create a New S3 Bucket**:
+  ```bash
+  aws s3 mb s3://my-bucket-name
+  ```
+
+#### b. **Upload a File to S3**:
+  ```bash
+  aws s3 cp myfile.txt s3://my-bucket-name/
+  ```
+
+#### c. **List Buckets**:
+  ```bash
+  aws s3 ls
+  ```
+
+#### d. **Download a File from S3**:
+  ```bash
+  aws s3 cp s3://my-bucket-name/myfile.txt ./
+  ```
+
+#### e. **Delete an S3 Bucket**:
+  ```bash
+  aws s3 rb s3://my-bucket-name --force
+  ```
+
+#### f. **Sync a Local Directory to an S3 Bucket**:
+  ```bash
+  aws s3 sync ./local-folder s3://my-bucket-name
+  ```
