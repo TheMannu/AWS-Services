@@ -211,3 +211,6 @@ Lifecycle rules allow you to automate transitioning objects to cheaper storage c
 
 The **Requestor Pays** feature allows the data requester, rather than the data owner, to bear the cost of the request and data transfer. This is particularly useful when you host large public datasets.
 
+**Example:**
+If you host a dataset that is frequently accessed by researchers, you can enable Requestor Pays so that they bear the cost of downloading the data.
+
