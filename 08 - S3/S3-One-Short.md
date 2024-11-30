@@ -214,3 +214,9 @@ The **Requestor Pays** feature allows the data requester, rather than the data o
 **Example:**
 If you host a dataset that is frequently accessed by researchers, you can enable Requestor Pays so that they bear the cost of downloading the data.
 
+
+### S3 Access Methods
+
+- **AWS Management Console**: Simple web interface to interact with S3.
+- **AWS CLI**: Command-line interface for managing S3 buckets and objects.
+- **SDKs**: AWS SDKs allow developers to integrate S3 into their applications.
