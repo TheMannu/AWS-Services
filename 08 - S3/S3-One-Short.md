@@ -224,3 +224,10 @@ If you host a dataset that is frequently accessed by researchers, you can enable
 ### S3 Event Notifications
 
 S3 can send notifications to AWS Lambda, Amazon Simple Notification Service (SNS), or Amazon Simple Queue Service (SQS) when certain events (like object creation or deletion) occur, enabling automated workflows or triggers.
+
+### S3 Object Tagging
+
+**Object tagging** is the process of assigning key-value pairs to objects in your bucket. This helps with organizing, managing access, and applying lifecycle policies.
+
+**Example:**
+You might tag objects as `project=abc` and `status=archived` to differentiate between active and archived data, applying specific policies to them.
