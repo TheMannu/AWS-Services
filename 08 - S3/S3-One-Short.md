@@ -220,3 +220,7 @@ If you host a dataset that is frequently accessed by researchers, you can enable
 - **AWS Management Console**: Simple web interface to interact with S3.
 - **AWS CLI**: Command-line interface for managing S3 buckets and objects.
 - **SDKs**: AWS SDKs allow developers to integrate S3 into their applications.
+
+### S3 Event Notifications
+
+S3 can send notifications to AWS Lambda, Amazon Simple Notification Service (SNS), or Amazon Simple Queue Service (SQS) when certain events (like object creation or deletion) occur, enabling automated workflows or triggers.
