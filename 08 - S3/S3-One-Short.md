@@ -207,3 +207,7 @@ Lifecycle rules allow you to automate transitioning objects to cheaper storage c
 - **Request Cost**: Charges apply for GET, PUT, and other requests made to access or manipulate data.
 - **Data Transfer**: Costs are incurred for transferring data out of S3 to the internet or to different AWS regions.
 
+### S3 Requestor Pays
+
+The **Requestor Pays** feature allows the data requester, rather than the data owner, to bear the cost of the request and data transfer. This is particularly useful when you host large public datasets.
+
