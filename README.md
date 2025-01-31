@@ -5,7 +5,7 @@ Welcome to the **AWS Cloud Services** repository! This repo is your go-to resour
 ## 🗂 Overview of AWS Services Covered
 This repository is structured into folders, each focusing on a key AWS service. Here's what you'll find:
 
-**💻 [EC2 (Elastic Compute Cloud)](./EC2)**: Virtual servers to run your applications, with tutorials on instance management, Auto Scaling, and cost optimization.
+- **💻 EC2 (Elastic Compute Cloud)**: Virtual servers to run your applications, with tutorials on instance management, Auto Scaling, and cost optimization.
   
 - **📦 S3 (Simple Storage Service)**: Scalable object storage for data backup, hosting static websites, and more.
 
